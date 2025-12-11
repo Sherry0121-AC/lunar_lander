@@ -1,0 +1,32 @@
+============================================================
+🧪 Testing Trained LunarLander DQN Model
+============================================================
+2025-12-11 11:27:31.523571: E tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:268] failed call to cuInit: CUDA_ERROR_MPS_CONNECTION_FAILED: MPS client failed to connect to the MPS control daemon or the MPS server
+2025-12-11 11:27:31.523625: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:168] retrieving CUDA diagnostic information for host: hpclab03
+2025-12-11 11:27:31.523634: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:175] hostname: hpclab03
+2025-12-11 11:27:31.523732: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:199] libcuda reported version is: 570.133.20
+2025-12-11 11:27:31.523756: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:203] kernel reported version is: 570.133.20
+2025-12-11 11:27:31.523764: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:309] kernel version seems to match DSO: 570.133.20
+✅ 模型加载成功: ./weights/lunar_lander_dqn.h5
+🧪 Test Episode   0 | Reward:  198.10 | Steps:  476
+🧪 Test Episode   1 | Reward:  289.53 | Steps:  301
+🧪 Test Episode   2 | Reward:  266.95 | Steps:  400
+🧪 Test Episode   3 | Reward:  235.19 | Steps:  379
+🧪 Test Episode   4 | Reward:  232.37 | Steps:  438
+🧪 Test Episode   5 | Reward:  234.31 | Steps:  401
+🧪 Test Episode   6 | Reward:  245.33 | Steps:  434
+🧪 Test Episode   7 | Reward:  239.97 | Steps:  429
+🧪 Test Episode   8 | Reward:  236.43 | Steps:  425
+🧪 Test Episode   9 | Reward:  284.10 | Steps:  216
+
+============================================================
+📊 FINAL TEST RESULTS
+============================================================
+📈 测试回合数: 10
+💰 平均奖励: 246.23
+📊 标准差: 25.78
+🏆 最高奖励: 289.53
+📉 最低奖励: 198.10
+✅ 成功率 (>200): 90.0% (9/10)
+🎉 性能评级: 优秀 - 智能体已学会稳定着陆!
+============================================================
