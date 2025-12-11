@@ -19,6 +19,7 @@ Run the test script to see the trained agent in action:
 python test_trained_model.py
 ```
 Then select an option:
+
 1: Quick Test (5 episodes with rendering)
 
 2: Full Test (10 episodes with rendering)
