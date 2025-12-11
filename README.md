@@ -1,27 +1,39 @@
-# LunarLander DQN with Gymnasium
+# LunarLander DQN Project
 
 ## 📋 Project Overview
-This project implements a Deep Q-Network (DQN) agent for the LunarLander-v2 environment using Gymnasium API.
+A Deep Q-Network (DQN) agent trained to solve the LunarLander-v2 environment from Gymnasium. The trained model achieves an average reward of 246.23 with a 90% success rate.
 
-## 🚀 Features
-- Modern implementation using Gymnasium (not deprecated Gym)
-- Deep Q-Network with experience replay and target network
-- TensorBoard logging for training visualization
-- Comprehensive hyperparameter tracking
-- Training and testing modes
+## 🛠️ How to Run
 
-## 📊 Hyperparameters
-| Parameter | Value | Description |
-|-----------|-------|-------------|
-| Learning Rate | 0.0005 | Controls how much to update weights |
-| Discount Factor (γ) | 0.99 | Importance of future rewards |
-| Epsilon Start | 1.0 | Initial exploration rate |
-| Epsilon Decay | 0.995 | Exploration decay rate |
-| Batch Size | 64 | Training batch size |
-| Replay Buffer | 100,000 | Experience replay memory size |
-
-## 📈 How to Use
-
-### 1. Install dependencies
+### 1. Setup Environment
 ```bash
+git clone https://github.com/Sherry0121-AC/lunar_lander.git
+cd lunar_lander
+
 pip install -r requirements.txt
+```
+
+### 2. Test the Pre-trained Model 
+Run the test script to see the trained agent in action:
+```bash
+python test_trained_model.py
+```
+Then select an option:
+1: Quick Test (5 episodes with rendering)
+
+2: Full Test (10 episodes with rendering)
+
+3: Record Demo (generate a GIF)
+
+4: No-render Test (for server environments)
+
+### 3. Train from Scratch
+If you want to train the model yourself:
+```bash
+python lunar_lander.py
+```
+
+### 4. Visualize Training
+```bash
+tensorboard --logdir logs/
+```
